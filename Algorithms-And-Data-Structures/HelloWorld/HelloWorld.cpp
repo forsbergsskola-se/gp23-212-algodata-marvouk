@@ -1,7 +1,11 @@
-#include "TurboMaths.h"
 #include <iostream>
 
-void TurboCollections::TurboMaths::SayHello()
+#include "TurboMaths.h"
+
+
+int main(int argc, char* argv[])
 {
-    std::cout << "Hello, I'm " << typeid(TurboMaths).name() << "\n";
+    TurboCollections::TurboMaths::SayHello();
+    std::cout << "Hello, World!\n";
+    return 0;
 }
