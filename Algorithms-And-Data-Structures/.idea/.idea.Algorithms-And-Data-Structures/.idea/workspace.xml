@@ -12,9 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/gmock.1.11.0/lib/native/src/gmock/gmock-all.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/gmock.1.11.0/lib/native/src/gtest/gtest-all.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P1_3_Iterator/P1_3_Iterator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/P1_3_Iterator/P1_3_Iterator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboSort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboSort.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboSortTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboSortTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="C++ Project.P1_3_Iterator">
+  <component name="RunManager" selected="C++ Project.TurboCollectionsTest">
     <configuration name="HelloWorld" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
