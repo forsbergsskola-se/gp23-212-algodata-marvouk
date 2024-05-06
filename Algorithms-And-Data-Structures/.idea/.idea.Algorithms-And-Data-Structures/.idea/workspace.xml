@@ -12,15 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboSortTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms-And-Data-Structures.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms-And-Data-Structures.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboCollections.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboCollections.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloWorld/HelloWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/HelloWorld.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollections/TurboSort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboSort.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboSort.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboSort.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboSort.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboSort.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboSortTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboSortTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="C++ Project.P1_2_Collections">
+  <component name="RunManager" selected="C++ Project.TurboCollectionsTest">
     <configuration name="HelloWorld" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
@@ -206,7 +202,7 @@
       <updated>1714984285819</updated>
       <workItem from="1714984290860" duration="133000" />
       <workItem from="1714984474087" duration="972000" />
-      <workItem from="1714985615243" duration="8843000" />
+      <workItem from="1714985615243" duration="11968000" />
     </task>
     <servers />
   </component>

@@ -1,16 +1,17 @@
-#include "TurboSort.h"
+#include "gmock/gmock.h"
 #include "gtest/gtest.h"
-#include "gmock/gmock-matchers.h"
+
+#include "TurboSort.h"
+
 
 namespace TurboCollections
 {
     namespace TurboSortTest
     {
-        TEST(CheckTheSame,Testing)
+        TEST(SortingTest, WorksTesting)
         {
-            std::vector<int>TurboCollections::TurboSort::lists{1,2,3,4};
-
-            SUCCEED();
+            std::vector<int> list = TurboSort::TurboList();
+            EXPECT_THAT(list, testing::ElementsAre(1,2,3,4));
         }
     }
 }

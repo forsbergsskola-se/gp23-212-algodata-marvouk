@@ -4,12 +4,12 @@
 
 namespace TurboCollections
 {
- class TurboSort
- {
+ static class TurboSort
+  {
     TurboSort () = delete;
- public:
-    std::vector<int> lists();
- };
+   public:
+  static std::vector<int> TurboList();
+  };
     
 }
 
