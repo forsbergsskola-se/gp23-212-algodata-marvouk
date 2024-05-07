@@ -15,31 +15,18 @@ public:
     void push(const T& item)
     {
         // Insert Code from AddNumber Example in #4 here
-        
-        bool empty() const;
-        // returns the current number of items contained in the stack.
-        size_t size() const;
-        // adds one item on top of the stack.
-        void push(const T& item);
-        // returns the item on top of the stack without removing it.
-        T& top();
-        const T& top() const;
-        // removes the top item from th stack.
-        void pop();
-        // --------------- BONUS ---------------
-        // gets the iterator for this collection.
-        Iterator<T> begin() const;
-        Iterator<T> end() const;
+        throw "NotImplementedException()";
+      
     }
 
     T& top() {
-        throw "NotImplementedException()";
+       
         // Return the Value of Last Node here.
+        lastNode->Value;
     }
 
     const void pop()
     {
-        throw "NotImplementedException()";
         // Assign the Last Node's Previous Node to be the Last Node.
         // -- This effectively removes the previously Last Node of the Stack
         // -- Imagine LastNode is customer 436
@@ -47,22 +34,24 @@ public:
         // -- We assign that before customer 435 to LastNode.
         // -- -- 435 knows that 434 was before him.
         // -- -- But he has no memory of customer 436.
+        lastNode->Previous = lastNode;
     }
     
     bool empty() const {
-        throw "NotImplementedException()";
         // Return true, if the LastNode is null
+        if(lastNode == nullptr)return true;
     }
 
     size_t size() const {
-        throw "NotImplementedException()";
+        
         // Here, you need to do a while loop over all nodes
         // Similar to the previous PrintAllNodes Function
         // But instead of Printing Nodes, you just count how many Nodes you have visited
         // Similar to this:
         size_t count = 0;
-        while(false/* remove false and replace with correct condition...*/){
+        while(lastNode != nullptr){
             count++;
+            lastNode = lastNode->Previous;
         }
         return count;
     }
