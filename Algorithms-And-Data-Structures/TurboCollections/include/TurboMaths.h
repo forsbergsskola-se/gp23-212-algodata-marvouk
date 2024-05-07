@@ -15,7 +15,7 @@ namespace TurboCollections
         {
             std::vector<int> numbers;
     
-            for(int i = 0; i < maxNumber; i++)
+            for(int i = 0; i <= maxNumber; i++)
             {
                 if(i % 2 == 0)
                 {

@@ -17,10 +17,10 @@ int main(int argc, char* argv[])
         cout << number << "\n";
     }
 
-   vector<int> list = TurboCollections::TurboMaths::GetEvenNumbersList(12);
+   vector<int> list = TurboCollections::TurboMaths::GetEvenNumbersList(15);
    for(int& number : list)
    {
-       cout<<number;
+       cout<<number<<" ";
    }
     
     return 0;
