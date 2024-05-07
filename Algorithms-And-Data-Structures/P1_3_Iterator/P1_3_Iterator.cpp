@@ -12,9 +12,9 @@ int main(int argc, char* argv[])
     for(auto it = number.begin(); it != number.end(); ++it)
     {
         std:: cout << *it;
-    }
+    } 
 
-    vector<int>TurboCollections::TurboMaths::AddEvenNumbers(12);
+    std::vector<int> even = TurboCollections::TurboMaths::GetEvenNumbersList(12);
     
     
     return 0;

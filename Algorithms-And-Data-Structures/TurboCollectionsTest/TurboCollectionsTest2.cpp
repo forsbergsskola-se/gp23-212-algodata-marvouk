@@ -8,8 +8,8 @@ namespace TurboCollections
     {
         TEST(SayHello2, WorksWithoutTesting)
         {
-            std::vector<int> list{ 4, 3, 1, 2, 5};
-            list = TurboSort::TurboList();
+            std::vector<int> list{ 5, 3, 1, 2, 4};
+            TurboSort::TurboList(list);
             EXPECT_THAT(list, testing::ElementsAre(1,2,3,4,5));
         }
     }

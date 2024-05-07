@@ -1,26 +1,25 @@
 #include "TurboSort.h"
 
-    std::vector<int> TurboCollections::TurboSort::TurboList()
-    {
-        std::vector<int> lists{ 4, 3, 1, 2, 5};
-        int n = lists.size();
+void TurboCollections::TurboSort::TurboList(std::vector<int>&list)
+{
+    int n;
+    n = list.size();
 
-        for(int i = 0; i < n-2; i++)
+    for(int i = 0; i < n-1; i++)
+    {
+        int min = i;
+        for(int j = i + 1; j < n; j++)
         {
-            int min = i;
-            for(int j = i + 1; j < n-1; j++)
+            if (list[j] < list[min])
             {
-                if (lists[j] < lists[min])
-                {
-                   min = j;
-                }
-            }
-            if (min != i)
-            {
-                std::swap(lists[min], lists[i]);
+                min = j;
             }
         }
-        return lists;
+        if (min != i)
+        {
+            std::swap(list[i], list[min]);
+        }
     }
+}
 
 

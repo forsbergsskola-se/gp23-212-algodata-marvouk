@@ -8,8 +8,9 @@ namespace TurboCollections
   {
     TurboSort () = delete;
    public:
-  static std::vector<int> TurboList();
+     
+    static void  TurboList(std::vector<int>& list);
   };
-    
+     
 }
 
