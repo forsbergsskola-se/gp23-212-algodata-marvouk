@@ -9,5 +9,8 @@ namespace TurboCollections
         TurboMaths() = delete;////
         public:
         static void SayHello();
+
+        std::vector<int> GetEvenNumbersList() = delete;
     };
+
 }
