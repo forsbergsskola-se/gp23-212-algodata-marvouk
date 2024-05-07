@@ -21,6 +21,7 @@ int main(int argc, char* argv[])
    for(int& number : list)
    {
        cout<<number<<" ";
+       //{} it doesnt give -1
    }
     
     return 0;

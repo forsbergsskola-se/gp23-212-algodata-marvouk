@@ -15,7 +15,8 @@ namespace TurboCollections
 
         TEST(EvenNumbers, Testing)
         {
-            TurboCollections::TurboMaths::GetEvenNumbersList(12);
+            std::vector<int> list = TurboMaths::GetEvenNumbersList(12);
+            EXPECT_THAT(list, testing::ElementsAre(0, 2, 4, 6, 8, 10, 12));
         }
     }
 }

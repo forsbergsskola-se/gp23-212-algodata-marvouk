@@ -163,6 +163,7 @@
     <ClCompile Include="TurboSort.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\TurboLinkedStack.h" />
     <ClInclude Include="include\TurboMaths.h" />
     <ClInclude Include="include\TurboSort.h" />
   </ItemGroup>
