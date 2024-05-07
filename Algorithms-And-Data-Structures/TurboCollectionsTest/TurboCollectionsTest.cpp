@@ -12,5 +12,10 @@ namespace TurboCollections
 
             SUCCEED();
         }
+
+        TEST(EvenNumbers, Testing)
+        {
+            TurboCollections::TurboMaths::GetEvenNumbersList(12);
+        }
     }
 }

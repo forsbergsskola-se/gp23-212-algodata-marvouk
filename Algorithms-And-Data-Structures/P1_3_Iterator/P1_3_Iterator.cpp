@@ -1,23 +1,31 @@
 
 #include <iostream>
 #include <vector>
-#include "../TurboCollections/include/TurboMaths.h"
+#include "TurboMaths.h"
 using namespace std;
-
 
 int main(int argc, char* argv[])
 {
-    vector<int> number{1,1,2,3,5};
+    vector<int> numbers{};
+    numbers.push_back(1);
+    numbers.push_back(1);
+    numbers.push_back(2);
+    numbers.push_back(3);
+    numbers.push_back(5);
     
-    for(auto it = number.begin(); it != number.end(); ++it)
-    {
-        std:: cout << *it;
-    } 
+    for (int& number : numbers){
+        cout << number << "\n";
+    }
 
-    std::vector<int> even = TurboCollections::TurboMaths::GetEvenNumbersList(12);
-    
+   vector<int> list = TurboCollections::TurboMaths::GetEvenNumbersList(12);
+   for(int& number : list)
+   {
+       cout<<number;
+   }
     
     return 0;
 }
+
+
 
 
