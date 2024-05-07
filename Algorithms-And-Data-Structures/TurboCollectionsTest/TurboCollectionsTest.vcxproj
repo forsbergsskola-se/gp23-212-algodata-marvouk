@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="TurboCollectionsTest.cpp" />
-    <ClCompile Include="TurboSortTest.cpp">
+    <ClCompile Include="TurboCollectionsTest2.cpp">
       <AssemblerOutput>NoListing</AssemblerOutput>
       <AssemblerListingLocation>Debug\</AssemblerListingLocation>
       <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
@@ -119,11 +119,11 @@
       <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
       <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
       <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;;_UNICODE;UNICODE;</PreprocessorDefinitions>
       <EnablePREfast>false</EnablePREfast>
       <OmitFramePointers>false</OmitFramePointers>
       <LinkCompiled>true</LinkCompiled>
-      <AdditionalIncludeDirectories>C:\Projects\gp23-212-algodata-marvouk\Algorithms-And-Data-Structures\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.6\build\native\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\gp23-212-algodata-marvouk\Algorithms-And-Data-Structures\packages\gmock.1.11.0\build\native\..\..\lib\native\include\;C:\Projects\gp23-212-algodata-marvouk\Algorithms-And-Data-Structures\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

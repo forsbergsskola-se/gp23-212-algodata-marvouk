@@ -11,11 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboMaths.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboMaths.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboMaths.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboMaths.h" afterDir="false" />
-    </list>
+    <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +55,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="C++ Project.P1_3_Iterator">
+  <component name="RunManager" selected="C++ Project.TurboCollectionsTest">
     <configuration name="HelloWorld" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
@@ -203,7 +199,8 @@
       <workItem from="1714984474087" duration="972000" />
       <workItem from="1714985615243" duration="12559000" />
       <workItem from="1715015953466" duration="5185000" />
-      <workItem from="1715075750688" duration="2401000" />
+      <workItem from="1715075750688" duration="4668000" />
+      <workItem from="1715086158644" duration="2472000" />
     </task>
     <servers />
   </component>
