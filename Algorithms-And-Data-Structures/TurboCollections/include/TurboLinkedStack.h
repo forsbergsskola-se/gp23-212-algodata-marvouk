@@ -37,7 +37,7 @@ public:
         // -- We assign that before customer 435 to LastNode.
         // -- -- 435 knows that 434 was before him.
         // -- -- But he has no memory of customer 436.
-        lastNode->Previous = lastNode;
+        lastNode = lastNode->Previous;
     }
     
     bool empty() const {
