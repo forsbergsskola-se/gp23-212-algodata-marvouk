@@ -9,7 +9,7 @@ class TurboLinkedStack
     {
         T Value;
         Node* Previous;
-        Node(const T& val) : Value(val), Previous(nullptr) {}
+        Node(const T& val) : Value(val), Previous(nullptr) {}//NEED CONSTRUCTOR
     };
     Node* lastNode;
 public:
@@ -24,7 +24,6 @@ public:
     }
 
     T& top() {
-       
         // Return the Value of Last Node here.
        return lastNode->Value;
     }

@@ -16,11 +16,11 @@ namespace TurboCollections
             stack.push(20);
             stack.push(30);
 
-            assert(stack.top(),30);
+            EXPECT_EQ(stack.top(),30);
             stack.pop();
-            assert(stack.top(),20);
+            EXPECT_EQ(stack.top(),20);
             stack.pop();
-            assert(stack.top(),10);
+            EXPECT_EQ(stack.top(),10);
             stack.pop();
             EXPECT_TRUE(stack.empty());
         }
