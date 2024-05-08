@@ -23,6 +23,7 @@ namespace TurboCollections
             EXPECT_EQ(stack.top(),10);
             stack.pop();
             EXPECT_TRUE(stack.empty());
+            EXPECT_EQ(stack.size(),3);
         }
     }
 }

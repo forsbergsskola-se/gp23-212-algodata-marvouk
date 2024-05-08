@@ -54,7 +54,7 @@ public:
         size_t count = 0;
         while(lastNode != nullptr){
             count++;
-            lastNode = lastNode->Previous;
+            lastNode->Previous = lastNode ;
         }
         return count;
     }
