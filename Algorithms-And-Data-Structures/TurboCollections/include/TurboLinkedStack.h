@@ -3,26 +3,30 @@
 #include <vector>
 
 template <typename T>
-class TurboLinkedStack<T>
+class TurboLinkedStack
 {
     struct Node
     {
         T Value;
         Node* Previous;
+        Node(const T& val) : Value(val), Previous(nullptr) {}
     };
     Node* lastNode;
 public:
+    TurboLinkedStack() : lastNode(nullptr){}
+
     void push(const T& item)
     {
         // Insert Code from AddNumber Example in #4 here
-        throw "NotImplementedException()";
-      
+        Node* newNode = new Node(item); //New_Node = New_Node(Data)
+        newNode->Previous = lastNode; //New_Node.Prev = Last
+        lastNode = newNode;//last = New_Node
     }
 
     T& top() {
        
         // Return the Value of Last Node here.
-        lastNode->Value;
+       return lastNode->Value;
     }
 
     const void pop()
@@ -65,34 +69,37 @@ public:
             currentNode = startAtNode;
         }
 
-        Iterator<T>& operator++() {
-            throw "NotImplementedException()";
+        Iterator<T>& operator++()
+        {
             // Make currentNode point to currentNode's previous node
+            currentNode = currentNode->Previous;
             return *this;
         }
 
-        T& operator*() const {
-            throw "NotImplementedException()";
+        T& operator*() const
+        {
             // Return the value of the CurrentNode
+            return currentNode->Value;
         }
 
-        bool operator==(const Iterator<T>& other) const {
-            throw "NotImplementedException()";
+        bool operator==(const Iterator<T>& other) const
+        {
             // return true if both operators have the same current node
+            return currentNode == other.currentNode;
         }
-        bool operator!=(const Iterator<T>& other) const {
-            throw "NotImplementedException()";
+        bool operator!=(const Iterator<T>& other) const
+        {
             // return true if both operators have different current nodes
+            return currentNode != other.currentNode;
         }
     };
 
-    Iterator<T> begin() {
-        throw "NotImplementedException()";
+    Iterator<T> begin()
+    {
         return Iterator<T>(LastNode);
     }
     
     Iterator<const T> begin() const {
-        throw "NotImplementedException()";
         return Iterator<const T>(LastNode);
     }
 };
