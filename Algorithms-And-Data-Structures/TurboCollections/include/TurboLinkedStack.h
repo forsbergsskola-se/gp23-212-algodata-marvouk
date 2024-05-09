@@ -96,10 +96,10 @@ public:
 
     Iterator<T> begin()
     {
-        return Iterator<T>(LastNode);
+        return Iterator<T>(lastNode);
     }
     
     Iterator<const T> begin() const {
-        return Iterator<const T>(LastNode);
+        return Iterator<const T>(lastNode);
     }
-};
+}; 

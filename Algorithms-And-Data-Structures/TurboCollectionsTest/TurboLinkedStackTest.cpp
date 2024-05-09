@@ -25,5 +25,30 @@ namespace TurboCollections
             EXPECT_TRUE(stack.empty());
             EXPECT_EQ(stack.size(),0);
         }
+
+        TEST(LinkedStack, IteratorPlus)
+        {
+            TurboLinkedStack<int> stack;
+
+            stack.push(10);
+            stack.push(20);
+
+            auto it = stack.begin();
+            ++it;
+            EXPECT_EQ(*it,10);
+        }
+
+        TEST(LinkedStack, IteratorAsterisk)
+        {
+            TurboLinkedStack<int> stack;
+
+            stack.push(10);
+            stack.push(20);
+            stack.push(30);
+
+            auto it = stack.begin();
+            EXPECT_EQ(*it,30);
+        }
+        
     }
 }
