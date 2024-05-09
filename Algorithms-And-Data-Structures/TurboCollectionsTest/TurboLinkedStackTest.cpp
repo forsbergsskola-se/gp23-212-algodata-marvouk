@@ -23,7 +23,7 @@ namespace TurboCollections
             EXPECT_EQ(stack.top(),10);
             stack.pop();
             EXPECT_TRUE(stack.empty());
-            EXPECT_EQ(stack.size(),0);
+            EXPECT_EQ(stack.size(),0);//this one i dont know
         }
 
         TEST(LinkedStack, IteratorPlus)
@@ -48,6 +48,32 @@ namespace TurboCollections
 
             auto it = stack.begin();
             EXPECT_EQ(*it,30);
+        }
+
+        TEST(LinkedStack, IteratorEqual)
+        {
+            TurboLinkedStack<int> stack;
+            stack.push(10);
+            auto it = stack.begin();
+
+            TurboLinkedStack<int> stack2;
+            stack2.push(10);
+            auto iterator = stack2.begin();
+
+            EXPECT_EQ(*it,*iterator);
+        }
+
+        TEST(LinkedStack, IteratorNotEqual)
+        {
+            TurboLinkedStack<int> stack;
+            stack.push(10);
+            auto it = stack.begin();
+
+            TurboLinkedStack<int> stack2;
+            stack2.push(20);
+            auto iterator = stack2.begin();
+
+            EXPECT_NE(*it,*iterator);
         }
         
     }
