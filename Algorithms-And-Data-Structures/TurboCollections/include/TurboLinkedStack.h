@@ -37,12 +37,13 @@ public:
         // -- We assign that before customer 435 to LastNode.
         // -- -- 435 knows that 434 was before him.
         // -- -- But he has no memory of customer 436.
-        lastNode = lastNode->Previous;
+        if(lastNode!=nullptr)
+            lastNode = lastNode->Previous;
     }
     
     bool empty() const {
         // Return true, if the LastNode is null
-        if(lastNode == nullptr)return true;
+        return lastNode == nullptr;
     }
 
     size_t size() const {
@@ -52,9 +53,9 @@ public:
         // But instead of Printing Nodes, you just count how many Nodes you have visited
         // Similar to this:
         size_t count = 0;
-        while(lastNode != nullptr){
+        while(lastNode != nullptr)
+        {
             count++;
-            lastNode->Previous = lastNode ;
         }
         return count;
     }
