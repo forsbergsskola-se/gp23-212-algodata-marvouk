@@ -1,7 +1,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
-#include <variant>
+
 using namespace std;
 
 int main(int argc, char* argv[])
@@ -21,4 +21,5 @@ int main(int argc, char* argv[])
             ++iterator;
         }
     }
+    
 }

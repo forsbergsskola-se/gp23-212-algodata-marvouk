@@ -12,6 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P1_2_Collections/P1_2_Collections.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/P1_2_Collections/P1_2_Collections.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboLinkedStackTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboLinkedStackTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +39,7 @@
     <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/include/variant" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Collections1/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/gmock.1.11.0/lib/native/include/gmock/gmock.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/gmock.1.11.0/lib/native/include/gtest/gtest.h" root0="SKIP_HIGHLIGHTING" />
@@ -219,7 +222,7 @@
       <workItem from="1715075750688" duration="4668000" />
       <workItem from="1715086158644" duration="21490000" />
       <workItem from="1715162970188" duration="10225000" />
-      <workItem from="1715190297634" duration="8657000" />
+      <workItem from="1715190297634" duration="13574000" />
     </task>
     <servers />
   </component>
