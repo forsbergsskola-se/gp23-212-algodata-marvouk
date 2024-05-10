@@ -32,7 +32,7 @@ public:
         backNode->Previous = lastNode;
         lastNode = backNode;
         cout<< lastNode->Value;
-        delete backNode;
+        delete backNode;//dont know1
     }
 
    void level1(){inGame("Go to Level 1");}
@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
 {
     GameStateHistory<string> stack;
     stack.inGame("MainMenu");
-    while(stack.lastNode!=nullptr)
+    while(stack.lastNode!=nullptr)//
     {
         stack.choose();
     }
