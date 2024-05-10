@@ -26,19 +26,20 @@ public:
         lastNode = nextNode;
     }
 
-    void backChoice(const T& backState)
+    void backChoice()
     {
-        Node* backNode = new Node(backState);
-        backNode->Value = lastNode->Previous;
+        Node* backNode = lastNode->Previous;
+        backNode->Previous = lastNode;
         lastNode = backNode;
-        cout<<lastNode;
+        cout<< lastNode->Value;
+        delete backNode;
     }
 
-  static void level1(){cout<<"Go to Level 1";}
-  static void level2(){cout<<"Go to Level 2";}
-  static void settings(){cout<<"Go to Settings";}
-  static void goBack(){cout<<"You went back to ";}
-  static void quitGame(){cout<<"Game quitting..";}
+   void level1(){inGame("Go to Level 1");}
+   void level2(){inGame("Go to Level 2");}
+   void settings(){inGame("Go to Settings");}
+   void goBack(){backChoice();}
+   void quitGame(){inGame("Game quitting..");}
 
     void choose()
     {
@@ -49,8 +50,10 @@ public:
         case '1':level1();break;
         case '2':level2();break;
         case '0':settings();break;
-        case 'b':goBack();break;
+        case 'b':goBack(); break;
         case 'q':quitGame();break;
+            default:cout<<"Can't do that!";
+            break;
         }
     }
 };
@@ -59,7 +62,10 @@ int main(int argc, char* argv[])
 {
     GameStateHistory<string> stack;
     stack.inGame("MainMenu");
-    stack.choose();
+    while(stack.lastNode!=nullptr)
+    {
+        stack.choose();
+    }
     
     return 0;
 }
