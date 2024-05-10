@@ -156,6 +156,16 @@
   <ItemGroup>
     <ClCompile Include="GameStateHistory.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TurboCollectionsTest\TurboCollectionsTest.vcxproj">
+      <Project>{99413ecc-c258-433d-aa82-6ede3524db61}</Project>
+      <Name>TurboCollectionsTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TurboCollections\TurboCollections.vcxproj">
+      <Project>{f11b691a-8b1b-49de-8a55-d789bfaf2ae1}</Project>
+      <Name>TurboCollections</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

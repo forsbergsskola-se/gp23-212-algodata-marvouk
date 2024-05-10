@@ -12,7 +12,7 @@ class TurboLinkedStack
         Node(const T& val) : Value(val), Previous(nullptr) {}//NEED CONSTRUCTOR
     };
     Node* lastNode;
-public:
+public: 
     TurboLinkedStack() : lastNode(nullptr){}
 
     void push(const T& item)
@@ -56,6 +56,7 @@ public:
         while(lastNode != nullptr)
         {
             count++;
+            lastNode->Previous = lastNode;
         }
         return count;
     }
