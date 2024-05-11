@@ -1,6 +1,6 @@
 #include <iostream>
+#include <cstdlib>
 #include "../TurboCollections/include/TurboLinkedStack.h"
-#include <stdlib.h>
 
 using namespace std;
 
@@ -30,6 +30,7 @@ public:
     void backChoice()
     {
         Node* backNode = lastNode->Previous;
+        delete lastNode;
             lastNode = backNode;
             cout<< lastNode->Value;
     }

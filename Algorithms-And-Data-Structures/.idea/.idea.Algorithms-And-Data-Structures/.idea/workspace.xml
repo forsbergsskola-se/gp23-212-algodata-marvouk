@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameStateHistory/GameStateHistory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameStateHistory/GameStateHistory.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -238,7 +239,7 @@
       <workItem from="1715162970188" duration="10225000" />
       <workItem from="1715190297634" duration="13574000" />
       <workItem from="1715330339830" duration="21196000" />
-      <workItem from="1715422803030" duration="2599000" />
+      <workItem from="1715422803030" duration="5141000" />
     </task>
     <servers />
   </component>
