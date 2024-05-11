@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../TurboCollections/include/TurboLinkedStack.h"
+#include <stdlib.h>
 
 using namespace std;
 
@@ -37,7 +38,7 @@ public:
    void level2(){inGame("Go to Level 2");}
    void settings(){inGame("Go to Settings");}
    void goBack(){cout<<"You went back to ",backChoice();}
-   void quitGame(){inGame("Game quitting..");}
+  static void quitGame(){cout<<"Game quitting..";}
 
     void choose()
     {
@@ -49,7 +50,7 @@ public:
         case '2':level2();break;
         case '0':settings();break;
         case 'b':goBack();break;
-        case 'q':quitGame();break;
+        case 'q':quitGame();exit(0);//internet says this is how quit
             default:cout<<"Can't do that!";
             break;
         }
