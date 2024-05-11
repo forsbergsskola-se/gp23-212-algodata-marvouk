@@ -38,6 +38,7 @@ public:
    void level1(){inGame("Go to Level 1");}
    void level2(){inGame("Go to Level 2");}
    void settings(){inGame("Go to Settings");}
+    void mainMenu(){inGame("Go to MainMenu");}
    void goBack(){cout<<"You went back to ",backChoice();}
   static void quitGame(){cout<<"Game quitting..";}
 
@@ -47,13 +48,27 @@ public:
         cin >> type;
         switch (type)
         {
-        case '1':level1();break;
-        case '2':level2();break;
-        case '0':settings();break;
+        case '1':
+            if(lastNode->Value=="Go to MainMenu"||lastNode->Value=="Go to Level 2")
+                 level1();
+            break;
+        case '2':
+            if(lastNode->Value=="Go to Level 1")
+                level2();
+            break;
+        case '0':
+            if(lastNode->Value=="Go to MainMenu")
+                settings();
+            break;
+        case 'm':
+            if(lastNode->Value=="Go to Level 1"||lastNode->Value=="Go to Level 2")
+                mainMenu();
+            break;
         case 'b':goBack();break;
         case 'q':quitGame();exit(0);//internet says this is how quit
-            default:cout<<"Can't do that!";
-            break;
+            default:
+                cout<<"Can't do that!";
+                 break;
         }
     }
 };
@@ -61,7 +76,7 @@ public:
 int main(int argc, char* argv[])
 {
     GameStateHistory<string> stack;
-    stack.inGame("MainMenu");
+    stack.inGame("Go to MainMenu");
     do
     {
         stack.choose();
