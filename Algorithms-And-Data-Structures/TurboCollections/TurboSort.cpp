@@ -46,4 +46,9 @@ void TurboCollections::TurboSort::BubbleSort(std::vector<int>&bubbleList)
     }
 }
 
+void TurboCollections::TurboSort::QuickSort(std::vector<int>& quickSort)
+{
+    //
+}
+
 
