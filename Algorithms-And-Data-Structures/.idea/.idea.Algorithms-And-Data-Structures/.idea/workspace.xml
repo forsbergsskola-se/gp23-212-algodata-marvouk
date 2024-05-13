@@ -13,8 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TurboCollections/include/Average.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TurboCollectionsTest/AverageAlgorithmsTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameStateHistory/GameStateHistory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameStateHistory/GameStateHistory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboCollections.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboCollections.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.vcxproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +242,8 @@
       <workItem from="1715162970188" duration="10225000" />
       <workItem from="1715190297634" duration="13574000" />
       <workItem from="1715330339830" duration="21196000" />
-      <workItem from="1715422803030" duration="5924000" />
+      <workItem from="1715422803030" duration="6634000" />
+      <workItem from="1715602287394" duration="1084000" />
     </task>
     <servers />
   </component>
