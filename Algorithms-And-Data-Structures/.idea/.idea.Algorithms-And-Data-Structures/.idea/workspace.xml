@@ -13,11 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TurboCollections/include/Average.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TurboCollectionsTest/AverageAlgorithmsTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollections/TurboCollections.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboCollections.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboSort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboSort.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/include/Average.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboSort.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboSort.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/AverageAlgorithmsTest.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest2.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Collections1/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/gmock.1.11.0/lib/native/include/gmock/gmock-matchers.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/gmock.1.11.0/lib/native/include/gmock/gmock.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/packages/gmock.1.11.0/lib/native/include/gtest/gtest-matchers.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/gmock.1.11.0/lib/native/include/gtest/gtest.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -65,7 +69,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="C++ Project.GameStateHistory">
+  <component name="RunManager" selected="C++ Project.TurboCollectionsTest">
     <configuration name="GameStateHistory" type="CppProject" factoryName="C++ Project">
       <configuration_1>
         <option name="CONFIGURATION" value="Debug" />
@@ -243,7 +247,8 @@
       <workItem from="1715190297634" duration="13574000" />
       <workItem from="1715330339830" duration="21196000" />
       <workItem from="1715422803030" duration="6634000" />
-      <workItem from="1715602287394" duration="1084000" />
+      <workItem from="1715602287394" duration="4135000" />
+      <workItem from="1715621151712" duration="8904000" />
     </task>
     <servers />
   </component>

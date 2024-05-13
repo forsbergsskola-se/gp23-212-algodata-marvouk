@@ -12,5 +12,12 @@ namespace TurboCollections
             TurboSort::TurboList(list);
             EXPECT_THAT(list, testing::ElementsAre(1,2,3,4,5));
         }
+
+        TEST(TestBubbelSort, WorksWithoutTesting)
+        {
+            std::vector<int> list{ 2, 3, 1, 5, 4};
+            TurboSort::BubbleSort(list);
+            EXPECT_THAT(list, testing::ElementsAre(1,2,3,4,5));
+        }
     }
 }
