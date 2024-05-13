@@ -1,13 +1,16 @@
-#include "TurboLinkedStack.h"
-#include "TurboMaths.h"
+#include "Average.h"
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 
 
 namespace TurboCollections
 {
-    namespace AverageAlgorithmsTest
-    {
-        
-    }
+        TEST(Average, WorksWithoutTesting)
+        {
+           Average ave ;
+            ave.average = {5,5,5,5};
+            ave.calcAverage();
+            EXPECT_EQ(ave.result,5);
+        }
+    
 }
