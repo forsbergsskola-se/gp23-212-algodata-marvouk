@@ -61,16 +61,16 @@ int TurboCollections::TurboSort::partition(std::vector<int>& list, int low, int 
 {
    int pivotValue = list[high]; // could be replaced by alternative pivot selection methods
     int partitionIndex = low;
-    for(int j = partitionIndex; j > high - 1; j++)
+    for(int j = partitionIndex; j < high - 1; j--)
     {
         if (list[j] < pivotValue)
         {
-            swap (list[partitionIndex] ,list[j]);
+           std:: swap (list[partitionIndex] ,list[j]);
             partitionIndex++;
         }
-        swap( list[partitionIndex], list[high]);
-        return partitionIndex;
     }
+       std:: swap( list[partitionIndex], list[high]);
+        return partitionIndex;
 }
 
 

@@ -12,7 +12,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="" />
+    <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboSort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboSort.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest2.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -356,6 +360,7 @@
       <workItem from="1715422803030" duration="6634000" />
       <workItem from="1715602287394" duration="4135000" />
       <workItem from="1715621151712" duration="10711000" />
+      <workItem from="1715675851867" duration="3859000" />
     </task>
     <servers />
   </component>
