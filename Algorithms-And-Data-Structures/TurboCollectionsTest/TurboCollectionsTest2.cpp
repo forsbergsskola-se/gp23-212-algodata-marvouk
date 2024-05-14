@@ -23,7 +23,7 @@ namespace TurboCollections
         TEST(TestQuickSort, WorksTesting)
         {
             std::vector<int> list{54, 25, 60, 5, 16, 7, 89, 9};
-            TurboSort::QuickSort(list,0,list.size());
+            TurboSort::QuickSort(list,0,list.size()-1);
             EXPECT_THAT(list, testing::ElementsAre(5,7,9,16,25,54,60,89));
         }
     }

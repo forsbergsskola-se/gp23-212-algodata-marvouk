@@ -50,7 +50,7 @@ void TurboCollections::TurboSort::BubbleSort(std::vector<int>&bubbleList)
 void TurboCollections::TurboSort::QuickSort(std::vector<int>& list, int low, int high)
 {
     if(low <= high)
-    {
+    { 
         int partitionIndex = partition(list,low,high);
         QuickSort(list, low, partitionIndex - 1);
         QuickSort(list, partitionIndex + 1, high);
@@ -61,7 +61,7 @@ int TurboCollections::TurboSort::partition(std::vector<int>& list, int low, int 
 {
    int pivotValue = list[high]; // could be replaced by alternative pivot selection methods
     int partitionIndex = low;
-    for(int j = partitionIndex; j < high - 1; j--)
+    for(int j = partitionIndex; j < high; j++)
     {
         if (list[j] < pivotValue)
         {
