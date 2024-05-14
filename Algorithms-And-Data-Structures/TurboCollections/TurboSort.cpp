@@ -1,5 +1,6 @@
 #include "TurboSort.h"
 
+#include <algorithm>
 #include <list>
 using namespace std;
 void TurboCollections::TurboSort::TurboList(std::vector<int>&list)
@@ -46,9 +47,32 @@ void TurboCollections::TurboSort::BubbleSort(std::vector<int>&bubbleList)
     }
 }
 
-void TurboCollections::TurboSort::QuickSort(std::vector<int>& quickSort)
+void TurboCollections::TurboSort::QuickSort(std::vector<int>& list, int low, int high)
 {
-    //
+    if(low <= high)
+    {
+        int partitionIndex = partition(list,low,high);
+        QuickSort(list, low, partitionIndex - 1);
+        QuickSort(list, partitionIndex + 1, high);
+    }
 }
+
+int TurboCollections::TurboSort::partition(std::vector<int>& list, int low, int high)
+{
+   int pivotValue = list[high]; // could be replaced by alternative pivot selection methods
+    int partitionIndex = low;
+    for(int j = partitionIndex; j > high - 1; j++)
+    {
+        if (list[j] < pivotValue)
+        {
+            swap (list[partitionIndex] ,list[j]);
+            partitionIndex++;
+        }
+        swap( list[partitionIndex], list[high]);
+        return partitionIndex;
+    }
+}
+
+
 
 
