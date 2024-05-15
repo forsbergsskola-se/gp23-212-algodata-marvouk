@@ -4,12 +4,16 @@
 
 namespace TurboCollections
 {
-    namespace TurboBinarySearchTree
-    {
+ 
        TEST(TestBinaryTree, TestingIfWorking)
-       { 
-           Tree<int>* newTree = Tree<int>::CreateNode(0);
+       {
+           Tree<int>* newTree = new Tree<int>();
+           newTree->CreateNode(0);
+           EXPECT_EQ(newTree->data,0);
+           
+           newTree->Left->CreateNode(0);
+           EXPECT_EQ(newTree->data,0);
            
        }
-    }
+    
 }
