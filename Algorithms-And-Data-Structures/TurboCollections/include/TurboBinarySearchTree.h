@@ -9,12 +9,11 @@ struct Tree                  //define Tree<T>
     Tree* Left;     // left : Tree<T>
     Tree* Right;     // right : Tree<T>
 
-    Tree* CreateNode(T data)
+    Tree(T value) : data(value), Left(nullptr), Right(nullptr) {}
+    
+    static Tree* CreateNode(T data)
     {
-       Tree* newTree = new Tree();
-        newTree->data = data;
-        newTree->Left = newTree->Right = nullptr;
-        return newTree;
+        return new Tree(data);
     }
  
 };
