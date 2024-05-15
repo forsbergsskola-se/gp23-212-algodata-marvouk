@@ -10,26 +10,27 @@ class Tree<T>                  //define Tree<T>
     Tree* Right = nullptr;     // right : Tree<T>
 public:
     // nodes : T[]
-    Tree* GetLeftChild()
+    int GetLeftChild(int n)
     {
-        return value*2+1;
+        Left = n*2+1;
+        return Left;
     }
 
-    Tree* GetRightChild()
+    int GetRightChild(int n)
     {
-        return value*2+2;
+        Right = n*2+2;
+        return Right;
     }
 
-    Tree* GetValue()
+    int GetValue(int n)
     {
-        return value;
+        return value[n];
     }
+    
 
-    Tree* SetValue(const T& val)
+    void SetValue(int n, T& val)
     {
-        //set nodes at index n to value
-        val = value;
-        return val;
+        value[n] = val;
     }
 };
 
