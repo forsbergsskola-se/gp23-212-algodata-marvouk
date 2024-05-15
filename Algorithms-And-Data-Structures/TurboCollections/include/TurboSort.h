@@ -1,9 +1,8 @@
 #pragma once
 #include <vector>
-
 namespace TurboCollections
 {
- static class TurboSort
+ class TurboSort
   {
     TurboSort () = delete;
    public:

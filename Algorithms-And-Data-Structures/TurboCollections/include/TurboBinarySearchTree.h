@@ -1,10 +1,22 @@
 #pragma once
+#include <iostream>
 #include <vector>
-namespace TurboCollections
+
+template <typename T>
+class TurboBinarySearchTree
 {
     struct Node
-   {
-      Node() = delete;
-       
-   };    
-}
+    {
+        T Data;
+        Node* Left;
+        Node* Right;
+        //NEED CONSTRUCTOR?
+        Node(const T& data): Data(data), Left(nullptr), Right(nullptr);
+    };
+
+    Node* root;
+public:
+    TurboBinarySearchTree(): root(nullptr){}
+  
+};
+
