@@ -3,20 +3,41 @@
 #include <vector>
 
 template <typename T>
-class TurboBinarySearchTree
+class Tree<T>                  //define Tree<T>
 {
-    struct Node
-    {
-        T Data;
-        Node* Left;
-        Node* Right;
-        //NEED CONSTRUCTOR?
-        Node(const T& data): Data(data), Left(nullptr), Right(nullptr);
-    };
-
-    Node* root;
+    T value;                //value : T
+    Tree* Left = nullptr;     // left : Tree<T>
+    Tree* Right = nullptr;     // right : Tree<T>
 public:
-    TurboBinarySearchTree(): root(nullptr){}
-  
+    // nodes : T[]
+    Tree* GetLeftChild()
+    {
+        return value*2+1;
+    }
+
+    Tree* GetRightChild()
+    {
+        return value*2+2;
+    }
+
+    Tree* GetValue()
+    {
+        return value;
+    }
+
+    Tree* SetValue(const T& val)
+    {
+        //set nodes at index n to value
+        val = value;
+        return val;
+    }
 };
+
+
+
+/*template <typename T>
+class Node<T>
+{
+    
+};*/
 
