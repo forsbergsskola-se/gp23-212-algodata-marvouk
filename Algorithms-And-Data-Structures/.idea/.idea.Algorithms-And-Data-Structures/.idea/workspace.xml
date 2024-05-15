@@ -13,10 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TurboCollections/include/TurboBinarySearchTree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboBinarySearchTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboBinarySearchTree.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboBinarySearchTree.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboCollections.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboCollections.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboBinarySearchTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboBinarySearchTree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinaryTestTreeTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinaryTestTreeTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -594,6 +592,7 @@
       <workItem from="1715602287394" duration="4135000" />
       <workItem from="1715621151712" duration="10711000" />
       <workItem from="1715675851867" duration="9278000" />
+      <workItem from="1715759337929" duration="8923000" />
     </task>
     <servers />
   </component>
@@ -602,16 +601,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/TurboCollections/TurboSort.cpp</url>
-          <line>49</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

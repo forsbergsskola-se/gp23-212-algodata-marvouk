@@ -7,9 +7,8 @@ namespace TurboCollections
     namespace TurboBinarySearchTree
     {
        TEST(TestBinaryTree, TestingIfWorking)
-       {
-           Tree<int>* tree = new Tree<int>;
-           EXPECT_EQ(tree->GetValue(1), 1);
+       { 
+           Tree<int>* newTree = Tree<int>::CreateNode(0);
            
        }
     }

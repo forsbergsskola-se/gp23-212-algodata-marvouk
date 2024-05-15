@@ -3,34 +3,16 @@
 #include <vector>
 
 template <typename T>
-class Tree<T>                  //define Tree<T>
+class Tree                  //define Tree<T>
 {
-    T value;                //value : T
-    Tree* Left = nullptr;     // left : Tree<T>
-    Tree* Right = nullptr;     // right : Tree<T>
+    T data;                //value : T
+    Tree* Left;     // left : Tree<T>
+    Tree* Right;     // right : Tree<T>
 public:
-    // nodes : T[]
-    int GetLeftChild(int n)
+    Tree* CreateNode(T data)
     {
-        Left = n*2+1;
-        return Left;
-    }
-
-    int GetRightChild(int n)
-    {
-        Right = n*2+2;
-        return Right;
-    }
-
-    int GetValue(int n)
-    {
-        return value[n];
-    }
-    
-
-    void SetValue(int n, T& val)
-    {
-        value[n] = val;
+        Tree* newRoot = new Tree();
+        return newRoot;
     }
 };
 
