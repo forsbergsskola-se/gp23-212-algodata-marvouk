@@ -1,4 +1,4 @@
-#include "TurboBinarySearchTree.h"
+#include "..\TurboCollections\include\TurboBinaryTree.h"
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 
@@ -19,6 +19,8 @@ namespace TurboCollections
 
            newTree->Right = Tree<int>::CreateNode(2);
            EXPECT_EQ(newTree->Right->data,2);
+
+           delete newTree; 
        }
     
 }
