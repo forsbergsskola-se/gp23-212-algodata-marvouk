@@ -158,12 +158,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="TurboBinarySearchTree.cpp" />
     <ClCompile Include="TurboBinaryTree.cpp" />
     <ClCompile Include="TurboCollections.cpp" />
     <ClCompile Include="TurboMaths.cpp" />
     <ClCompile Include="TurboSort.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\TurboBinarySearchTree.h" />
     <ClInclude Include="include\TurboBinaryTree.h" />
     <ClInclude Include="include\TurboLinkedQueue.h" />
     <ClInclude Include="include\TurboLinkedStack.h" />
