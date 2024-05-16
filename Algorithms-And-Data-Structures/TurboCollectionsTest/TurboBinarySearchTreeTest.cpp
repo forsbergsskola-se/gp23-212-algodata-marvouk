@@ -15,6 +15,10 @@ namespace TurboCollections
             node->Insert(node,11);
             EXPECT_EQ(node->right->data,11);
             
+            node->Search(node,5);
+            EXPECT_NE(node->data,5);
+            node->Search(node,5);
+            EXPECT_EQ(node->left->data,5);
             node->Search(node,11);
             EXPECT_EQ(node->right->data,11);
         }

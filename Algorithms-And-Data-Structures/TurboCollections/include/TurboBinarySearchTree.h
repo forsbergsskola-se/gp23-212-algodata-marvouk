@@ -45,13 +45,12 @@ struct Node
          if(value > root->data)
             {
                root->right = Search(root->right,value);
-             return root;
             }
          if(value < root->data)
             {
                 root->left = Search(root->left,value);
-             return root;
             }
+        if(value)return root;
             if(!root->left || !root->right)
             {
                 cout<<"There is not a subtree of ", root->left;
