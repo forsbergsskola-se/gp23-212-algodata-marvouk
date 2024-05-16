@@ -12,9 +12,11 @@ namespace TurboCollections
             EXPECT_EQ(node->data,10);
             node->Insert(node,5);
             EXPECT_EQ(node->left->data,5);
-            node->Insert(node,15);
-            EXPECT_EQ(node->right->data,15);
+            node->Insert(node,11);
+            EXPECT_EQ(node->right->data,11);
             
+            node->Search(node,11);
+            EXPECT_EQ(node->right->data,11);
         }
         
 
