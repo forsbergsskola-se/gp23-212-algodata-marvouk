@@ -77,7 +77,7 @@ struct Node
             root->left = Search(root->left,value);
             delete root->left;
         }
-        if(value)return root;
+        return nullptr;
     }
 };
 
