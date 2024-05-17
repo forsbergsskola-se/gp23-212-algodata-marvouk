@@ -42,22 +42,43 @@ struct Node
             return root;
         }
         
-         if(value > root->data)
-            {
-               root->right = Search(root->right,value);
-            }
-         if(value < root->data)
-            {
-                root->left = Search(root->left,value);
-            }
-        if(value)return root;
-            if(!root->left || !root->right)
-            {
-                cout<<"There is not a subtree of ", root->left;
-            }
-            else
-                cout<<"There is not a subtree of ", root->right;
+        if(value > root->data)
+        {
+            root->right = Search(root->right,value);
         }
+        if(value < root->data)
+        {
+            root->left = Search(root->left,value);
+        }
+        if(value)return root;
+        if(!root->left || !root->right)
+        {
+            cout<<"There is not a subtree of ", root->left;
+        }
+        else
+            cout<<"There is not a subtree of ", root->right;
+        return nullptr;
+    }
+
+    static Node* Delete(Node* root, T value)
+    {
+        if(root->data == value)
+        {
+            delete root;
+        }
+        
+        if(value > root->data)
+        {
+            root->right = Search(root->right,value);
+            delete root->right;
+        }
+        if(value < root->data)
+        {
+            root->left = Search(root->left,value);
+            delete root->left;
+        }
+        if(value)return root;
+    }
 };
 
 
