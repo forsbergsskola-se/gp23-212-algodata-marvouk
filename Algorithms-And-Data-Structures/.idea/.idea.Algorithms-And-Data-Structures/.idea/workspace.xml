@@ -12,11 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboBinarySearchTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboBinarySearchTree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinarySearchTreeTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinarySearchTreeTest.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -300,7 +296,7 @@
       <workItem from="1715675851867" duration="9278000" />
       <workItem from="1715759337929" duration="18327000" />
       <workItem from="1715853081838" duration="26234000" />
-      <workItem from="1715946700687" duration="4365000" />
+      <workItem from="1715946700687" duration="4947000" />
     </task>
     <servers />
   </component>

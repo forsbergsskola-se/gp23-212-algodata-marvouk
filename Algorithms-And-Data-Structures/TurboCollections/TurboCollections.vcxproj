@@ -162,6 +162,7 @@
     <ClCompile Include="TurboBinaryTree.cpp" />
     <ClCompile Include="TurboCollections.cpp" />
     <ClCompile Include="TurboMaths.cpp" />
+    <ClCompile Include="TurboSearch.cpp" />
     <ClCompile Include="TurboSort.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +171,7 @@
     <ClInclude Include="include\TurboLinkedQueue.h" />
     <ClInclude Include="include\TurboLinkedStack.h" />
     <ClInclude Include="include\TurboMaths.h" />
+    <ClInclude Include="include\TurboSearch.h" />
     <ClInclude Include="include\TurboSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
