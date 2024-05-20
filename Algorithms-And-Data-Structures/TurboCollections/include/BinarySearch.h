@@ -16,7 +16,7 @@ namespace TurboCollections
             int lowerBound = 0;
             int upperBound = n - 1;
 
-            while(x == NULL)
+            while(x != NULL)
             {
                 if(upperBound < lowerBound)
                 {
