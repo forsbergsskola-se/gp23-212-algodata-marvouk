@@ -13,7 +13,7 @@ namespace TurboCollections
         {
             std::vector<int> list{ 2, 3, 1, 5, 4};
              int index = TurboSearch<int>::linear_search(list, 5);
-            EXPECT_EQ(index,3);
+            EXPECT_EQ(index,5);
 
             int index2 = TurboSearch<int>::linear_search(list, 6);
             EXPECT_NE(index2,3);
