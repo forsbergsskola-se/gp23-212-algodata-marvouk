@@ -8,9 +8,11 @@ namespace TurboCollections
     {
         BinarySearch() = delete;
     public:
-        static int binary_search(std::vector<T>& a, int& n, int x)
+        static int binary_search(std::vector<T>&a,int x)
         {
-            n = a.size();
+            
+            T n = a.size();
+            
             int lowerBound = 0;
             int upperBound = n - 1;
 
@@ -28,7 +30,7 @@ namespace TurboCollections
                 }else if(a[midPoint] > x)
                 {
                     upperBound = midPoint - 1;
-                }else if(a[midPoint] = x)
+                }else if(a[midPoint] == x)
                 {
                     return midPoint;
                 }         
