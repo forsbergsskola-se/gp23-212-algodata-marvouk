@@ -11,14 +11,11 @@ class TurboSearch
 public:
     static int linear_search (std::vector<T>& list,int value)
     {
-        for (int i = 0; i < list.size(); i++)
+        for(T item : list)
         {
-            if(list[i] == value)
-            {
-                return i;
-            }
+            if(item == value) return item;
         }
-        return -1;
+        return 0;
     }
 
 };

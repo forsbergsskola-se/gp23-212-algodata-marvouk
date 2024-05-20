@@ -9,7 +9,7 @@ struct Tree                  //define Tree<T>
     Tree* Left;     // left : Tree<T>
     Tree* Right;     // right : Tree<T>
 
-    Tree(T value) : data(value), Left(nullptr), Right(nullptr) {}
+    Tree(T value) : data(value), Left(nullptr), Right(nullptr) {}//constr
     
     static Tree* CreateNode(T data)
     {

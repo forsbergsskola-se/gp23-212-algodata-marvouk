@@ -13,11 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboSearchTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/TurboSearch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/TurboSearch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboBinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboBinaryTree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboSearch.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboSearch.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboCollectionsTest.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboSearchTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboSearchTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +301,7 @@
       <workItem from="1715759337929" duration="18327000" />
       <workItem from="1715853081838" duration="26234000" />
       <workItem from="1715946700687" duration="4947000" />
-      <workItem from="1716030108099" duration="3430000" />
+      <workItem from="1716030108099" duration="5086000" />
     </task>
     <servers />
   </component>
