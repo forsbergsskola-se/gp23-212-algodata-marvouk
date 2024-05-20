@@ -4,11 +4,9 @@
 
 namespace TurboCollections
 {
- 
-       TEST(TestBinaryTree, TestingIfWorking)
-       {
-           Tree<int>* newTree = Tree<int>::CreateNode(0);
-          
-       }
+    namespace TurboBinaryTree
+    {
+        
+    }
     
 }

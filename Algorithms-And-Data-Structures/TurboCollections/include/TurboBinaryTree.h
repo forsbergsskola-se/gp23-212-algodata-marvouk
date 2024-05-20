@@ -5,54 +5,55 @@
 template <typename T>
 class Tree                  //define Tree<T>
 {
+public:
     T data;                //value : T
     Tree* Left;     // left : Tree<T>
     Tree* Right;     // right : Tree<T>
+    std::vector<T> nodes;
     
     Tree(T value) : data(value), Left(nullptr), Right(nullptr) {}//constr
-    
-    
-    static Tree*  GetLeftChild( T n)
+
+
+    static T GetLeftChild( T n)
     {
         return n * 2 + 1;
     }
 
-    static Tree* GetRightChild(T n)
+    static T GetRightChild(T n)
     {
         return n * 2 + 2;
     }
 
-    static Tree* GetValue(T n)
+     T GetValue(T n)
     {
-     return data[n]; // return nodes at index n
+     return nodes[n]; // return nodes at index n
     }
 
-    static Tree* SetValue(T n,T value)
+    void SetValue(T n, T value)
     {
-       value = data[n] ; //set nodes at index n to value
-       return value;
+        nodes[n] = value; //set nodes at index n to value
     }
 };
 
-
+/*
 template <typename T>
 struct Node
 {
     T index = 0;
-    Tree<T>* tree = new Tree<T>;
+    Tree<T>* tree = nullptr;
     
-    static Node* GetLeftChild()
+     Node* GetLeftChild()
     {
-        return new Node(tree->GetLeftChild(index));
+        return new Node(tree,tree->GetLeftChild(index));
     }
-   static Node* GetValue()
+    T GetValue()
     {
       return tree->GetValue(index);
     }
 
-    static Node*  SetValue(T value)
+     void SetValue(T value)
     {
-        return tree.SetValue(index, value);
+        return tree->SetValue(index, value);
     }
-};
+};*/
 
