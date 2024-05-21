@@ -14,8 +14,7 @@ struct Node
     
     static Node* GetNewNode(T data)
     {
-        Node<int>* newNode = new Node(data);
-        return newNode;
+        return new Node(data);
     }
 
     static Node* Insert(Node* root,T value)
@@ -41,7 +40,6 @@ struct Node
         {
             return root;
         }
-        
         if(value > root->data)
         {
             root->right = Search(root->right,value);

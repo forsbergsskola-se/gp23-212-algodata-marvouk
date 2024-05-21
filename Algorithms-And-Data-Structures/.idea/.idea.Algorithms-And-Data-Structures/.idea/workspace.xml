@@ -13,7 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinaryTreeTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinaryTreeTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboBinarySearchTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboBinarySearchTree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinarySearchTreeTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinarySearchTreeTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +303,7 @@
       <workItem from="1715946700687" duration="4947000" />
       <workItem from="1716030108099" duration="17307000" />
       <workItem from="1716275078316" duration="760000" />
-      <workItem from="1716306088632" duration="1903000" />
+      <workItem from="1716306088632" duration="3667000" />
     </task>
     <servers />
   </component>
