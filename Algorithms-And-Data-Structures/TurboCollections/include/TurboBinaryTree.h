@@ -3,17 +3,10 @@
 #include <vector>
 
 template <typename T>
-class Tree                  //define Tree<T>
+class Tree                
 {
 public:
-    T data;                //value : T
-    Tree* Left;     // left : Tree<T>
-    Tree* Right;     // right : Tree<T>
     std::vector<T> nodes;
-    
-    Tree(T value) : data(value), Left(nullptr), Right(nullptr) {}//constr
-
-
     static T GetLeftChild( T n)
     {
         return n * 2 + 1;
@@ -35,25 +28,4 @@ public:
     }
 };
 
-/*
-template <typename T>
-struct Node
-{
-    T index = 0;
-    Tree<T>* tree = nullptr;
-    
-     Node* GetLeftChild()
-    {
-        return new Node(tree,tree->GetLeftChild(index));
-    }
-    T GetValue()
-    {
-      return tree->GetValue(index);
-    }
-
-     void SetValue(T value)
-    {
-        return tree->SetValue(index, value);
-    }
-};*/
 

@@ -16,7 +16,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboBinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboBinaryTree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinaryTreeTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinaryTreeTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboSearchTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboSearchTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +301,9 @@
       <workItem from="1715759337929" duration="18327000" />
       <workItem from="1715853081838" duration="26234000" />
       <workItem from="1715946700687" duration="4947000" />
-      <workItem from="1716030108099" duration="16786000" />
+      <workItem from="1716030108099" duration="17307000" />
+      <workItem from="1716275078316" duration="760000" />
+      <workItem from="1716306088632" duration="1440000" />
     </task>
     <servers />
   </component>
