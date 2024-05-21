@@ -13,8 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc96b6ed-1b4a-409c-8c88-87497a83d7ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms-And-Data-Structures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TurboCollections/include/TurboBinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollections/include/TurboBinaryTree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinaryTreeTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TurboCollectionsTest/TurboBinaryTreeTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -303,7 +301,7 @@
       <workItem from="1715946700687" duration="4947000" />
       <workItem from="1716030108099" duration="17307000" />
       <workItem from="1716275078316" duration="760000" />
-      <workItem from="1716306088632" duration="1440000" />
+      <workItem from="1716306088632" duration="1903000" />
     </task>
     <servers />
   </component>
