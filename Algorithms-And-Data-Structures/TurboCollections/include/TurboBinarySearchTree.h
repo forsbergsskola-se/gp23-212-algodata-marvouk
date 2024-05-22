@@ -23,6 +23,10 @@ struct Node
         {
             return GetNewNode(value);
         }
+        if(value == root->data)
+        {
+            value = root->data;
+        }
         if(value < root->data)
         {
             root->left = Insert(root->left, value);
