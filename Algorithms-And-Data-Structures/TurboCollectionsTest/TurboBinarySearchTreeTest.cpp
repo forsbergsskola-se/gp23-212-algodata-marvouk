@@ -20,5 +20,13 @@ namespace TurboCollections
             const Node<int>* searchNode = Node<int>::Search(node,10);
             EXPECT_EQ(searchNode->data,10);
         }
+
+        TEST(InsertFunction, TestingInsert)
+        {
+            Node<int>* node = Node<int>::GetNewNode(10);
+            EXPECT_EQ(node->data,10);
+
+            
+        }
     }
 }
