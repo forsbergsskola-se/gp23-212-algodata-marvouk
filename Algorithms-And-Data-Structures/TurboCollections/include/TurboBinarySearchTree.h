@@ -55,23 +55,48 @@ struct Node
 
     static Node* Delete(Node* root, T value)
     {
-        if(root->data == nullptr)return root;
+        if(root== nullptr)return root;
         if(value > root->data)
             root->right = Delete(root->right,value);
         else if (value < root->data)
             root->left = Delete(root->left,value);
         else
-        {//if root has no children
-            if(root->right == nullptr && value > root->right)delete root;
-            else if(root->left == nullptr && value < root->left)delete root;
-            
-            if(root->right != nullptr && value > root->right)delete root;
-            else if(root->right != nullptr && value < root->right->left)delete root;
+        {
+            if (root->left == nullptr) {
+                Node* temp = root->right;
+                delete root;
+                return temp;
+            }
+            else if (root->right == nullptr) {
+                Node* temp = root->left;
+                delete root;
+                return temp;
+            }
         }
-        
-        return nullptr;
+        return root;
     }
-   
+
+    void Traverse(Node* n)
+    {
+        if(n != nullptr)
+        {
+         Traverse(n->left);
+          Visit(n);
+         Traverse(n->right);
+        }
+    }
+
+    static Node* Visit(Node* n)
+    {//Else: Search either for the Maximum of the left sub-tree (go left and then always right until you find a leaf)
+        //or the Minimum of the right sub-tree
+        //(go right and then always left) and replace the node with the leaf you just found.
+        Node* min = n;
+        while(min->right != nullptr)
+        {
+            min = n->right;
+        }
+        return min;
+    }
 };
 
 

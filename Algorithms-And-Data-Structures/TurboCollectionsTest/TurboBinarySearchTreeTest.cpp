@@ -41,5 +41,28 @@ namespace TurboCollections
             EXPECT_NE(node->left->data, 4);
            
         }
+
+        
+        TEST(DeleteFunction, TestingDelete)
+        {
+            Node<int>* node = Node<int>::GetNewNode(10);
+            EXPECT_EQ(node->data,10);
+
+            node->Insert(node,5);
+            EXPECT_EQ(node->left->data,5);
+
+            node->Insert(node->left,2);
+            EXPECT_EQ(node->left->left->data,2);
+
+            node->Search(node,5);
+            EXPECT_EQ(node->left->data, 5);
+
+            node->Search(node->left,2);
+            EXPECT_EQ(node->left->left->data,2);
+            
+            node->Delete(node,5);
+            EXPECT_NE(node->left->data,5);
+           
+        }
     }
 }
