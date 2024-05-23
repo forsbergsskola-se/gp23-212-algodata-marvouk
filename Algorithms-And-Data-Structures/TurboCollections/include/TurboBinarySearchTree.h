@@ -23,18 +23,15 @@ struct Node
         {
             return GetNewNode(value);
         }
-        if(value == root->data)
-        {
-            value = root->data;
-        }
-        if(value < root->data)
-        {
-            root->left = Insert(root->left, value);
-        }
-        else
-        {
-            root->right = Insert(root->right, value);
-        }
+            if(value < root->data)
+            {
+                root->left = Insert(root->left, value);
+            }
+            else
+            {
+                root->right = Insert(root->right, value);
+            }
+        
         return root;
     }
 
@@ -64,22 +61,18 @@ struct Node
 
     static Node* Delete(Node* root, T value)
     {
-        if(root->data == value)
-        {
-            delete root;
-        }
+        if(root == nullptr) return root;
         
         if(value > root->data)
         {
-            root->right = Search(root->right,value);
-            delete root->right;
+            root->right = Delete(root->right,value);
         }
         if(value < root->data)
         {
-            root->left = Search(root->left,value);
-            delete root->left;
+            root->left = Delete(root->left,value);
         }
-        return nullptr;
+        if(root) return root;
+       return nullptr;
     }
 };
 

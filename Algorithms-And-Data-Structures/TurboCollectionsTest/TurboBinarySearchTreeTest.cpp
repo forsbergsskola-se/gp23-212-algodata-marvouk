@@ -31,7 +31,9 @@ namespace TurboCollections
 
             const Node<int>* insertNodeRight = Node<int>::Insert(node,15);
             EXPECT_EQ(insertNodeRight->right->data,15);
-            
+
+            const Node<int>* searchInsertedvalue = Node<int>::Search(node,5);
+            EXPECT_EQ(searchInsertedvalue->left->data, 5);
         }
     }
 }
