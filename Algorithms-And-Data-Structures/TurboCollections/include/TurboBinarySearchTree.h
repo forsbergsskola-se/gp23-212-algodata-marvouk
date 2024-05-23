@@ -55,19 +55,23 @@ struct Node
 
     static Node* Delete(Node* root, T value)
     {
-        if(root == nullptr) return root;
-        
+        if(root->data == nullptr)return root;
         if(value > root->data)
-        {
             root->right = Delete(root->right,value);
-        }
-        if(value < root->data)
-        {
+        else if (value < root->data)
             root->left = Delete(root->left,value);
+        else
+        {//if root has no children
+            if(root->right == nullptr && value > root->right)delete root;
+            else if(root->left == nullptr && value < root->left)delete root;
+            
+            if(root->right != nullptr && value > root->right)delete root;
+            else if(root->right != nullptr && value < root->right->left)delete root;
         }
-        if(root) return root;
-       return nullptr;
+        
+        return nullptr;
     }
+   
 };
 
 
