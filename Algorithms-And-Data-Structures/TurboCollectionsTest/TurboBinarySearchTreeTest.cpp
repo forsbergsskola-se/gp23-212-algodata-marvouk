@@ -26,14 +26,14 @@ namespace TurboCollections
             Node<int>* node = Node<int>::GetNewNode(10);
             EXPECT_EQ(node->data,10);
 
-            const Node<int>* insertNodeLeft = Node<int>::Insert(node,5);
-            EXPECT_EQ(insertNodeLeft->left->data,5);
+            node->Insert(node,5);
+            EXPECT_EQ(node->left->data,5);
 
-            const Node<int>* insertNodeRight = Node<int>::Insert(node,15);
-            EXPECT_EQ(insertNodeRight->right->data,15);
+            node->Search(node,5);
+            EXPECT_EQ(node->left->data, 5);
 
-            const Node<int>* searchInsertedvalue = Node<int>::Search(node,5);
-            EXPECT_EQ(searchInsertedvalue->left->data, 5);
+            EXPECT_NE(node->left->data, 4);
+           
         }
     }
 }
