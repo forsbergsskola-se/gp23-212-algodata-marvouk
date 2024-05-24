@@ -24,40 +24,40 @@ struct Node
         {
             return GetNewNode(value);
         }
-            if(value < root->data)
-            {
-                root->left = Insert(root->left, value);
-            }
-            else
-            {
-                root->right = Insert(root->right, value);
-            }
+        if(value < root->data)
+        {
+            root->left = Insert(root->left, value);
+        }
+        else
+        {
+            root->right = Insert(root->right, value);
+        }
         return root;
     }
 
     static bool Search(Node* root,T value)
     {
-        if(root == nullptr)return root;
+        if(root == nullptr)return false;
         
         if(value > root->data)
         {
-            root->right = Search(root->right,value);
+            return Search(root->right,value);
         }
         else if (value < root->data)
         {
-            root->left = Search(root->left,value);
+            return Search(root->left,value);
         }
-        return root;
+        return true;
     }
 
     static bool Delete(Node* root, T value)
     {
-        if(root== nullptr)return root;
+        if(root == nullptr)return false;
         if(value > root->data)
-            root->right = Delete(root->right,value);
-        else if (value < root->data)
-            root->left = Delete(root->left,value);
-        else
+           return Delete(root->right,value);
+        if (value < root->data)
+          return Delete(root->left,value);
+        
         {
             if(root->left == nullptr && root->right == nullptr)
             {
@@ -65,24 +65,23 @@ struct Node
                 root = nullptr;
             }
             else if (root->left == nullptr) {
-                Node* temp = root->right;
-                delete root;
-                return temp;
+                const Node* temp = root;
+                root = root->right;
+                delete temp;
             }
             else if(root->right == nullptr) {
-                Node* temp = root->left;
-                delete root;
-                return temp;
+                const Node* temp = root;
+                root = root->right;
+                delete temp;
             }
             else
             {
                 Node* temp = FindMin(root->right);
                 root->data = temp->data;
-                root->right = Delete(root->right, temp->data);
-                return temp;
+                 Delete(root->right, temp->data);
             }
+        return true;
         }
-        return nullptr;
     }
 
     void Traverse(Node* n)
