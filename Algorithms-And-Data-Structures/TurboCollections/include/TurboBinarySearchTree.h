@@ -37,20 +37,17 @@ struct Node
 
     static Node* Search(Node* root,T value)
     {
-        if(root->data == value)
-        {
-            return root;
-        }
-            if(value > root->data)
-            {
-                root->right = Search(root->right,value);
-            }
-           else if (value < root->data)
-           {
-              root->left = Search(root->left,value);
-           }
+        if(root == nullptr)return root;
         
-        return nullptr;
+        if(value > root->data)
+        {
+            root->right = Search(root->right,value);
+        }
+        else if (value < root->data)
+        {
+            root->left = Search(root->left,value);
+        }
+        return root;
     }
 
     static Node* Delete(Node* root, T value)
@@ -70,19 +67,22 @@ struct Node
             else if (root->left == nullptr) {
                 Node* temp = root->right;
                 delete root;
+                return temp;
             }
             else if(root->right == nullptr) {
                 Node* temp = root->left;
                 delete root;
+                return temp;
             }
             else
             {
                 Node* temp = FindMin(root->right);
                 root->data = temp->data;
                 root->right = Delete(root->right, temp->data);
+                return temp;
             }
         }
-        return root;
+        return nullptr;
     }
 
     void Traverse(Node* n)
@@ -90,6 +90,7 @@ struct Node
         if(n != nullptr)
         {
          Traverse(n->left);
+            printf("Visiting node: %d/n", n->data); 
          Traverse(n->right);
         }
     }

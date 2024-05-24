@@ -62,7 +62,10 @@ namespace TurboCollections
             
             node->Delete(node,5);
             EXPECT_NE(node->left->data,5);
-           
-        }
+
+            node->Search(node,5);
+            EXPECT_NE(node->left->data,5);
+            EXPECT_EQ(node->left->data,2);
+        } 
     }
 }
