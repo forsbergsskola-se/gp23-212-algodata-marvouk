@@ -16,7 +16,5 @@ namespace TurboCollections
             node->Delete(node,5);
             EXPECT_FALSE(node->Search(node,5));
         }
-
- 
     }
 }
