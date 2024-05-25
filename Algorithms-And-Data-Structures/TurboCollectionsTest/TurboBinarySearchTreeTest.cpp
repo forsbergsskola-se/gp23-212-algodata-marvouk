@@ -66,6 +66,7 @@ namespace TurboCollections
             node->Search(node,5);
             EXPECT_NE(node->left->data,5);
             EXPECT_EQ(node->left->data,2);
-        } 
+        }
+        
     }
 }
