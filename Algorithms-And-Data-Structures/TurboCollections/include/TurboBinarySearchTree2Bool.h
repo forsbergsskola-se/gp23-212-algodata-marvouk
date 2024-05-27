@@ -8,7 +8,7 @@ struct Node
         T data;
         Node* left;
         Node* right;
-    
+        Node* root = nullptr;
         Node() = delete;
     
     Node(T value): data(value), left(nullptr), right(nullptr)
@@ -40,21 +40,26 @@ struct Node
         }
     }
 
-    /* bool Search(T value)
+    bool Search(T value)
     {
-        if(root == nullptr)return false;
-        
-        if(value > root->data)
+        if (data == value)
+            return true;
+        else if (value < data)
         {
-             Search(value);
+            if (left == nullptr)
+                return false;
+            else
+                return left->Search(value);
         }
-        else if (value < root->data)
+        else
         {
-             Search(value);
+            if (right == nullptr)
+                return false;
+            else
+                return right->Search(value);
         }
-        return true;
     }
-
+/*
      bool Delete( T value)
     {
         if(root== nullptr)return root;
