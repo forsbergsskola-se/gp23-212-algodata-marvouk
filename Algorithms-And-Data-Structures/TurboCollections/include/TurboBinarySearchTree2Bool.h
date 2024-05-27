@@ -8,11 +8,10 @@ struct Node
         T data;
         Node* left;
         Node* right;
-        Node* root;
     
         Node() = delete;
     
-    Node(T value): data(value), left(nullptr), right(nullptr), root(nullptr)
+    Node(T value): data(value), left(nullptr), right(nullptr)
         {
         }
 
@@ -21,25 +20,27 @@ struct Node
         return new Node(data);
     }
 
-        Node* Insert(T value)
-        {
-            if (root == nullptr)
+    void Insert(T value)
+    {
+        if (value < data)
             {
-                root->GetNewNode(value);
-                return root;
-            }
-            if (value < root->data)
+            if (left == nullptr)
             {
-                root->left = Insert(value);
+                left = GetNewNode(value);
             }
-            if(value > root->data)
+            else
+                left->Insert(value);
+        } else
             {
-               root->right = Insert(value);
-            }
-            return root;
+            if (right == nullptr)
+            {
+                right = GetNewNode(value);
+            } else
+                right->Insert(value);
         }
+    }
 
-     bool Search(T value)
+    /* bool Search(T value)
     {
         if(root == nullptr)return false;
         
@@ -54,7 +55,7 @@ struct Node
         return true;
     }
 
-    static Node* Delete(Node* root, T value)
+     bool Delete( T value)
     {
         if(root== nullptr)return root;
         if(value > root->data)
@@ -106,7 +107,7 @@ struct Node
             root = root->left;
         }
         return root;
-    }
+    } */
 };
 
 
