@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+
 using namespace std;
 
 template <typename T>
@@ -44,66 +45,24 @@ struct Node
     {
         if (data == value)
             return true;
-        else if (value < data)
+         if (value < data)
         {
             if (left == nullptr)
                 return false;
-            else
-                return left->Search(value);
+            return left->Search(value);
         }
-        else
-        {
             if (right == nullptr)
                 return false;
-            else
-                return right->Search(value);
-        }
-    }
-/*
-     bool Delete( T value)
-    {
-        if(root== nullptr)return root;
-        if(value > root->data)
-            root->right = Delete(root->right,value);
-        else if (value < root->data)
-            root->left = Delete(root->left,value);
-        else
-        {
-            if(root->left == nullptr && root->right == nullptr)
-            {
-                delete root;
-                root = nullptr;
-            }
-            else if (root->left == nullptr) {
-                Node* temp = root->right;
-                delete root;
-                return temp;
-            }
-            else if(root->right == nullptr) {
-                Node* temp = root->left;
-                delete root;
-                return temp;
-            }
-            else
-            {
-                Node* temp = FindMin(root->right);
-                root->data = temp->data;
-                root->right = Delete(root->right, temp->data);
-                return temp;
-            }
-        }
-        return nullptr;
+        return right->Search(value);
     }
 
-    void Traverse(Node* n)
+    bool Delete(T value)
     {
-        if(n != nullptr)
-        {
-         Traverse(n->left);
-            printf("Visiting node: %d/n", n->data); 
-         Traverse(n->right);
-        }
+        if(value == data)return true;
+        if()
+        return false;
     }
+
 
     static Node* FindMin(Node* root)
     {
@@ -112,7 +71,7 @@ struct Node
             root = root->left;
         }
         return root;
-    } */
+    } 
 };
 
 
