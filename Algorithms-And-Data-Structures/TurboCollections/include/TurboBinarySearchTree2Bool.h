@@ -8,44 +8,48 @@ struct Node
         T data;
         Node* left;
         Node* right;
+        Node* root;
     
         Node() = delete;
     
-    Node(T value): data(value), left(nullptr), right(nullptr){}
-    
+    Node(T value): data(value), left(nullptr), right(nullptr), root(nullptr)
+        {
+        }
+
     static Node* GetNewNode(T data)
     {
         return new Node(data);
     }
 
-    static Node* Insert(Node* root,T value)
-    {
-        if(root == nullptr)
+        Node* Insert(T value)
         {
-            return GetNewNode(value);
+            if (root == nullptr)
+            {
+                root->GetNewNode(value);
+                return root;
+            }
+            if (value < root->data)
+            {
+                root->left = Insert(value);
+            }
+            if(value > root->data)
+            {
+               root->right = Insert(value);
+            }
+            return root;
         }
-            if(value < root->data)
-            {
-                root->left = Insert(root->left, value);
-            }
-            else
-            {
-                root->right = Insert(root->right, value);
-            }
-        return root;
-    }
 
-    static bool Search(Node* root,T value)
+     bool Search(T value)
     {
         if(root == nullptr)return false;
         
         if(value > root->data)
         {
-            return Search(root->right,value);
+             Search(value);
         }
         else if (value < root->data)
         {
-            return Search(root->left,value);
+             Search(value);
         }
         return true;
     }
