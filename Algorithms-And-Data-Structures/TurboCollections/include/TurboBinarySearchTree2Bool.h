@@ -59,8 +59,7 @@ struct Node
     bool Delete(T value) {
         Node* parent = nullptr;
         Node* current = this;
-
-        // Find the node to be deleted and its parent
+        
         while (current != nullptr && current->data != value) {
             parent = current;
             if (value < current->data) {
@@ -69,16 +68,12 @@ struct Node
                 current = current->right;
             }
         }
-
-        // If the node is not found
-        if (current == nullptr) {
-            return false;
-        }
-
+        if (current == nullptr)return false;
+        
         // Case 1: Node with only one child or no child
-        if (current->left == nullptr || current->right == nullptr) {
+        if (current->left == nullptr || current->right == nullptr)
+            {
             Node* newCurr;
-
             if (current->left == nullptr) {
                 newCurr = current->right;
             } else {
