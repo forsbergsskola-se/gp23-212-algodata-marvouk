@@ -56,55 +56,69 @@ struct Node
         return right->Search(value);
     }
 
-    bool Delete(T value) {
+    bool Delete(T value)
+    {
         Node* parent = nullptr;
         Node* current = this;
         
-        while (current != nullptr && current->data != value) {
+            while (current != nullptr && current->data != value)
+            {
             parent = current;
-            if (value < current->data) {
+            if (value < current->data)//if less it moves to the left child
+            {
                 current = current->left;
-            } else {
+            } else
+            {
                 current = current->right;
             }
         }
-        if (current == nullptr)return false;
+        if (current == nullptr)return false;//if not found returns false
         
-        // Case 1: Node with only one child or no child
-        if (current->left == nullptr || current->right == nullptr)
+            if (current->left == nullptr || current->right == nullptr)
             {
-            Node* newCurr;
-            if (current->left == nullptr) {
-                newCurr = current->right;
-            } else {
-                newCurr = current->left;
-            }
-
-            // If the node to be deleted is the root node
-            if (parent == nullptr) {
-                this->data = newCurr ? newCurr->data : 0;
-                this->left = newCurr ? newCurr->left : nullptr;
-                this->right = newCurr ? newCurr->right : nullptr;
+            Node* newCurrent;
+             if (current->left == nullptr)
+                {
+                 newCurrent = current->right;
+                } else
+                {
+                 newCurrent = current->left;
+                }
+            
+            if (parent == nullptr)
+            {
+                if(newCurrent!= nullptr)
+                {
+                    this->data = newCurrent->data;
+                    this->left = newCurrent->left ;
+                    this->right =newCurrent->right;
+                }else
+                {
+                    this->data = 0;
+                    this->left = nullptr;
+                    this->right = nullptr;
+                }
                 delete current;
                 return true;
             }
 
-            // Set the parent to the new child
-            if (current == parent->left) {
-                parent->left = newCurr;
-            } else {
-                parent->right = newCurr;
+            if (current == parent->left)
+            {
+                parent->left = newCurrent;
+            } else
+            {
+                parent->right = newCurrent;
             }
             delete current;
-        } else {
-            // Case 2: Node with two children
-            Node* successor = FindMin(current->right);
-            T successorValue = successor->data;
-            Delete(successor->data);
-            current->data = successorValue;
+        } else
+            {
+                const Node* min = FindMin(current->right);
+            T minValue = min->data;
+            Delete(min->data);
+            current->data = minValue;
         }
         return true;
-    }
+    } 
 
 
     static Node* FindMin(Node* root)
