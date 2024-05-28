@@ -12,9 +12,7 @@ struct Node
         Node* root = nullptr;
         Node() = delete;
     
-    Node(T value): data(value), left(nullptr), right(nullptr)
-        {
-        }
+    Node(T value): data(value), left(nullptr), right(nullptr){}
 
     static Node* GetNewNode(T data)
     {
