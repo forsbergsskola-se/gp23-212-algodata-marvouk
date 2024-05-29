@@ -126,7 +126,20 @@ struct Node
             root = root->left;
         }
         return root;
-    } 
+    }
+
+        static void InOrderTraversal()
+        {
+            if(left!=nullptr)
+            {
+                left->InOrderTraversal();
+            }
+            cout<<data ;
+            if(right!= nullptr)
+            {
+                right->InOrderTraversal();
+            }
+        }
 };
 
 
