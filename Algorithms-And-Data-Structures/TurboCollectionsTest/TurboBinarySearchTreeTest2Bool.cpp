@@ -56,5 +56,18 @@ namespace TurboCollections
             EXPECT_FALSE(node->Search(5));
             
         }
+
+        TEST(InOrderTRaversal, testinginorder)
+        {
+                Node<int>* node = Node<int>::GetNewNode(10);
+                node->Insert(8);
+                node->Insert(19);
+                node->Insert(5);
+                node->Insert(13);
+                node->Insert(12);
+                node->Insert(3);
+                node->Delete(12);
+                node->InOrderTraversal();
+        }
     }
 }

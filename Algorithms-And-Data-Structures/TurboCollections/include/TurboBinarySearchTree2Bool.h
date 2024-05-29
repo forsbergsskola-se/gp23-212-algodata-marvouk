@@ -134,7 +134,7 @@ struct Node
             {
                 left->InOrderTraversal();
             }
-            cout<<data ;
+            cout<<data<<"," ;
             if(right!= nullptr)
             {
                 right->InOrderTraversal();
