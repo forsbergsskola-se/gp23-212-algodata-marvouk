@@ -69,5 +69,20 @@ namespace TurboCollections
                 node->Delete(12);
                 node->InOrderTraversal();
         }
+
+        TEST(TestReversePattern,TestingReverse)
+        {
+            const std::vector<int> vec = {8,19,5,13,12,3};
+
+            const auto iteratorB = vec.rbegin();
+            const auto iteratorE = vec.rend();
+            if(iteratorB != iteratorE)
+            {
+                for (auto iterate = iteratorB; iterate != iteratorE; iterate++)
+                {
+                    std::cout << *iterate << ",";
+                }
+            }
+        }
     }
 }
