@@ -54,6 +54,7 @@ namespace TurboCollections
             node->Insert(1);
            node->Delete(5);
             EXPECT_FALSE(node->Search(5));
+            
         }
     }
 }

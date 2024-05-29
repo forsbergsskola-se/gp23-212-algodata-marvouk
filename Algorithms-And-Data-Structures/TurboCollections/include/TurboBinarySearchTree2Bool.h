@@ -128,7 +128,7 @@ struct Node
         return root;
     }
 
-        static void InOrderTraversal()
+         void InOrderTraversal() const
         {
             if(left!=nullptr)
             {
