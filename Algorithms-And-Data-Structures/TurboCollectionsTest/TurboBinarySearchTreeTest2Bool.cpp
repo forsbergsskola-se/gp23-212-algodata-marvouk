@@ -84,5 +84,14 @@ namespace TurboCollections
                 }
             }
         }
+
+        TEST(CloneTree, TestingClone)
+        {
+            Node<int>* node = Node<int>::GetNewNode(10);
+            node->Insert(8);
+            node->Insert(19);
+           node->CloneTree(node);
+            node->Delete(19);
+        }
     }
 }

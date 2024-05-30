@@ -128,7 +128,7 @@ struct Node
         return root;
     }
 
-         void InOrderTraversal() const
+    void InOrderTraversal() const
         {
             if(left!=nullptr)
             {
@@ -140,6 +140,25 @@ struct Node
                 right->InOrderTraversal();
             }
         }
+
+    static Node* CloneTree(Node* root)
+    {
+        if(root == nullptr)return nullptr;
+
+        Node* cloneRoot = new Node(root->data);
+        cloneRoot->left = CloneTree(root->left);
+        cloneRoot->right = CloneTree(root->right);
+        
+        return cloneRoot;
+    }
+
+    static void DeleteNodeByNode(Node* root)
+    {
+        if(root != nullptr)return;
+        DeleteNodeByNode(root->left);
+        DeleteNodeByNode(root->right);
+        delete root;        
+    }
 };
 
 
