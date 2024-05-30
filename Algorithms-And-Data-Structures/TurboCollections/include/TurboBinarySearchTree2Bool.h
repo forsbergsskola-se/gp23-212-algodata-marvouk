@@ -154,7 +154,7 @@ struct Node
 
     static void DeleteNodeByNode(Node* root)
     {
-        if(root != nullptr)return;
+        if(root == nullptr)return;
         DeleteNodeByNode(root->left);
         DeleteNodeByNode(root->right);
         delete root;        

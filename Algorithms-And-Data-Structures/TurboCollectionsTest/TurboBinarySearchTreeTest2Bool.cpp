@@ -93,5 +93,14 @@ namespace TurboCollections
            node->CloneTree(node);
             node->Delete(19);
         }
+
+        TEST(DeleteNodeByNode, DeletingNodeByNode)
+        {
+            Node<int>* node = Node<int>::GetNewNode(10);
+            node->Insert(8);
+            node->Insert(19);
+            node->Insert(5);
+            node->DeleteNodeByNode(node);
+        }
     }
 }
